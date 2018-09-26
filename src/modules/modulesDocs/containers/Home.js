@@ -3,6 +3,10 @@ import { translate, Trans } from 'react-i18next';
 import { Header, Container } from 'semantic-ui-react';
 import Button from '~/modules/coreUI/components/basic/Button';
 import { Row } from '~/modules/coreUI/components/layouts/helpers/LinearLayout';
+// import Newsletter from '~/modules/modulesDocs/dev-test/sample.relayForm';
+import TextBox from '~/modules/coreUI/components/basic/TextBox';
+import CountriesDropdown from '~/modules/coreUI/components/compound/CountriesDropdown';
+import DatePicker from '~/modules/coreUI/components/compound/datePicker/DatePicker';
 
 const HomePage = () =>
   (
@@ -23,6 +27,10 @@ const HomePage = () =>
       </Container>
 
       <h3>I love BADR :)</h3>
+      <TextBox />
+      {/* <Newsletter /> */}
+      <CountriesDropdown />
+      <DatePicker />
     </React.Fragment>
   );
 
